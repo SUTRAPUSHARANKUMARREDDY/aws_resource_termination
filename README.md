@@ -9,8 +9,8 @@ To create the lambda function <br />
 -->cd package/<br />
 -->zip -r ../resourcetermination.zip .<br />
 -->cd ..<br />
--->zip -g instancestop.zip resource_termination.py <br />
--->zip -g instancestop.zip constant.py <br />
+-->zip -g resourcetermination.zip resource_termination.py <br />
+-->zip -g resourcetermination.zip constant.py <br />
 -->aws lambda create-function --function-name aws_resouce_termination --zip-file fileb://resourcetermination.zip --runtime python3.8 --role arn:aws:iam::***********:role/****** --handler resource_termination.lambda_handler --timeout 300<br />
 
 
